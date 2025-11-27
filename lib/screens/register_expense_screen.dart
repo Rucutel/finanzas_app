@@ -16,13 +16,54 @@ class _RegisterExpenseScreenState extends State<RegisterExpenseScreen> {
 
   String? _selectedCategory;
   String? _selectedSubcategory;
-  final List<String> _categories = ['Servicios', 'Compras', 'Transporte', 'Otros'];
+  final List<String> _categories = [
+    'CASA',
+    'TARJETAS',
+    'CELULARES',
+    'MOTO',
+    'EXTRAS',
+    'OTROS'
+  ];
+
   final Map<String, List<String>> _subcategories = {
-    'Servicios': ['Agua', 'Luz', 'Internet', 'Otros'],
-    'Compras': ['Supermercado', 'Ropa', 'Otros'],
-    'Transporte': ['Taxi', 'Bus', 'Otros'],
-    'Otros': ['Otros'],
+    'CASA': [
+      'ALQUILER',
+      'DESAYUNO',
+      'ALMUERZO',
+      'DESPENSA',
+      'LIMPIEZA',
+      'GAS',
+      'INTERNET'
+    ],
+    'TARJETAS': [
+      'INTERBANK',
+      'RIPLEY',
+      'CMR'
+    ],
+    'CELULARES': [
+      'RUBEN',
+      'ALEXA'
+    ],
+    'MOTO': [
+      'MANTENIMIENTO',
+      'GASOLINA',
+      'REPUESTOS',
+      'SOAT',
+      'LICENCIA',
+      'REV. TECNICA'
+    ],
+    'EXTRAS': [
+      'KAREN',
+      'PASAJES',
+      'PASTILLAS',
+      'CREMAS',
+      'SALIDAS'
+    ],
+    'OTROS': [
+      'OTROS'
+    ],
   };
+
 
   @override
   void dispose() {
